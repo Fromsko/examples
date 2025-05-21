@@ -1,0 +1,17 @@
+{
+  "builds": [
+    {
+      "src": "/*.{html,md}",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "api/index.go",
+      "use": "@vercel/go"
+    },
+    {
+      "src": "app/index.go",
+      "use": "@vercel/go"
+    }
+  ],
+  "rewrites": [{ "source": "/:path*", "destination": "/api" }]
+}

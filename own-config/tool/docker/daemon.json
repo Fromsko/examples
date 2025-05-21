@@ -1,0 +1,10 @@
+{
+  "registry-mirrors": [
+    "https://f77nxdv9.mirror.aliyuncs.com",
+    "https://dockerproxy.com",
+    "https://hub-mirror.c.163.com",
+    "https://mirror.baidubce.com",
+    "https://ccr.ccs.tencentyun.com"
+  ],
+  "hosts": ["tcp://0.0.0.0:2375", "unix:///var/run/docker.sock"]
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可爱动态主页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 自定义毛玻璃效果 */
+        .blur-effect {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* 动效关键帧 */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-purple-400 to-pink-500 h-screen flex items-center justify-center overflow-hidden">
+
+    <!-- 主容器 -->
+    <div
+        class="w-full max-w-md p-8 rounded-lg shadow-xl blur-effect flex flex-col items-center space-y-6 animate-float">
+
+        <!-- 标题 -->
+        <h1 class="text-4xl font-bold text-white">欢迎来到我的主页 😊</h1>
+
+        <!-- 符号表情 -->
+        <div class="text-9xl text-yellow-300 animate-spin-slow">
+            🌟✨🎉
+        </div>
+
+        <!-- 描述 -->
+        <p class="text-lg text-gray-200 text-center">
+            这里是一个超可爱的大屏聊天主页！<br>
+            毛玻璃效果 + 动效，让你的心情瞬间变得愉快！
+        </p>
+
+        <!-- 按钮 -->
+        <button
+            class="px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-lg hover:scale-110 transition-transform">
+            开始聊天 🎉
+        </button>
+
+        <!-- 底部小提示 -->
+        <div class="text-sm text-gray-300">
+            逐步展示更多内容... 🌈
+        </div>
+
+    </div>
+
+    <!-- 背景装饰 -->
+    <div class="absolute top-0 left-0 w-full h-full">
+        <div
+            class="w-24 h-24 bg-purple-300 rounded-full blur-effect opacity-50 absolute -top-10 -left-10 animate-spin-slow">
+        </div>
+        <div
+            class="w-32 h-32 bg-pink-300 rounded-full blur-effect opacity-50 absolute bottom-10 right-10 animate-float">
+        </div>
+    </div>
+
+</body>
+
+</html>

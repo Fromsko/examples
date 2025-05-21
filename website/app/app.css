@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(16, 31, 28, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(144, 147, 153, 0.5);
+  border-radius: 1px;
+  background-clip: padding-box;
+  min-height: 28px;
+  transition: background-color 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(144, 147, 153, 0.8);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+.selection-lay {
+  @apply snap-start min-h-screen flex flex-col items-center justify-center p-6;
+}
+
+.selection-card-lay {
+  @apply w-full max-w-2xl mx-auto p-6 border bg-[#1E293B]/90 rounded-2xl shadow-lg;
+}
+
+.button-down-lay {
+  @apply bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 active:scale-95 duration-300 ease-in-out;
+}

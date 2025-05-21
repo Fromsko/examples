@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "formulahendry.auto-close-tag",
+    "vue.volar",
+    "ms-python.debugpy",
+    "ms-python.python",
+    "esbenp.prettier-vscode",
+    "pkief.material-icon-theme",
+    "ritwickdey.liveserver",
+    "golang.go",
+    "eamodio.gitlens",
+    "dbaeumer.vscode-eslint",
+    "formulahendry.code-runner",
+    "twxs.cmake",
+    "ms-vscode.cmake-tools",
+    "ms-ceintl.vscode-language-pack-zh-hans"
+  ]
+}
